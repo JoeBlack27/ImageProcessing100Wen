@@ -4,7 +4,7 @@
 
 任何一门语言的学习，代码编写和理论学习有同等重要的作用，然而在很多情况下却忽略了代码实现的重要性，使知识仅停留在公式推导这一层次。为了巩固理论学习，本仓库在原库的基础上就理论细节进行了补充，同时加入了直接调用函数来实现图像处理的函数范例。
 
-说明：本文行文安排和源码实现参考了下面这个repository：
+***说明***：本文行文安排和源码实现参考了下面这个repository：
 
 ***Chinese is here***  (gzr2017, my ex-colleague, translates into Chinese)
 
@@ -14,14 +14,14 @@
 
 ## [Tutorial](Tutorial)
 
-|      |      内容      |         Python          |  Python API  |    C++                   | JavaScript |
-| :--: | :------------: | :---------------------: | :---------: | :----------------------: | ---------- |
-|  1   |      安装      |      [✓](Tutorial)      |      [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
-|  2   | 读取、显示图像 | [✓](Tutorial/README.md) |       [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
-|  3   |    操作像素    | [✓](Tutorial/README.md) |       [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
-|  4   |    拷贝图像    | [✓](Tutorial/README.md) |      [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
-|  5   |    保存图像    | [✓](Tutorial/README.md) |      [✓]    | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  6   |    练习问题    | [✓](Tutorial/README.md) |      [✓]    | [✓](Tutoria/README_opencv_c_install.md) |            |
+|      |      内容      |         Python          |    C++                   | JavaScript |
+| :--: | :------------: | :---------------------: |:----------------------: | ---------- |
+|  1   |      安装      |      [✓](Tutorial)      |  [✓](Tutoria/README_opencv_c_install.md) |            |
+|  2   | 读取、显示图像 | [✓](Tutorial/README.md) |    [✓](Tutoria/README_opencv_c_install.md) |            |
+|  3   |    操作像素    | [✓](Tutorial/README.md) |  [✓](Tutoria/README_opencv_c_install.md) |            |
+|  4   |    拷贝图像    | [✓](Tutorial/README.md) |  [✓](Tutoria/README_opencv_c_install.md) |            |
+|  5   |    保存图像    | [✓](Tutorial/README.md) |   [✓](Tutoria/README_opencv_c_install.md) |            |
+|  6   |    练习问题    | [✓](Tutorial/README.md) |   [✓](Tutoria/README_opencv_c_install.md) |            |
 
 [Matplotlib和OpenCV的Tips](Image_processing_tips.ipynb)
 
@@ -71,30 +71,30 @@ python answers/answer_@@.py
 
 | 序号 |                             内容                             | Python                                   |  Python API  | C++                                           | 翻译一校 |
 | :--: | :----------------------------------------------------------: | ---------------------------------------- | :---------: | --------------------------------------------- | :------: |
-|  21  | [直方图归一化（Histogram Normalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_1.py)  | [✓](Question_21_30/answers_cpp/answer_1.cpp)  |          |
-|  22  |            [直方图操作](Question_21_30/README.md)            | [✓](Question_21_30/answers/answer_2.py)  | [✓](Question_21_30/answers_cpp/answer_2.cpp)  |          |
-|  23  | [直方图均衡化（Histogram Equalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_3.py)  | [✓](Question_21_30/answers_cpp/answer_3.cpp)  |          |
-|  24  |   [伽玛校正（Gamma Correction）](Question_21_30/README.md)   | [✓](Question_21_30/answers/answer_4.py)  | [✓](Question_21_30/answers_cpp/answer_4.cpp)  |          |
-|  25  | [最邻近插值（Nearest-neighbor Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_5.py)  | [✓](Question_21_30/answers_cpp/answer_5.cpp)  |          |
-|  26  | [双线性插值（Bilinear Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_6.py)  | [✓](Question_21_30/answers_cpp/answer_6.cpp)  |          |
-|  27  | [双三次插值（Bicubic Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_7.py)  | [✓](Question_21_30/answers_cpp/answer_7.cpp)  |          |
-|  28  | [仿射变换（Afine Transformations）——平行移动](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_8.py)  | [✓](Question_21_30/answers_cpp/answer_8.cpp)  |          |
-|  29  | [仿射变换（Afine Transformations）——放大缩小](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_9.py)  | [✓](Question_21_30/answers_cpp/answer_9.cpp)  |          |
-|  30  | [仿射变换（ Afine Transformations ）——旋转](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_10.py) | [✓](Question_21_30/answers_cpp/answer_10.cpp) |          |
+|  21  | [直方图归一化（Histogram Normalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_1.py)  |   |[✓](Question_21_30/answers_cpp/answer_1.cpp)  |          |
+|  22  |            [直方图操作](Question_21_30/README.md)            | [✓](Question_21_30/answers/answer_2.py)  | | [✓](Question_21_30/answers_cpp/answer_2.cpp)  |          |
+|  23  | [直方图均衡化（Histogram Equalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_3.py)  | | [✓](Question_21_30/answers_cpp/answer_3.cpp)  |          |
+|  24  |   [伽玛校正（Gamma Correction）](Question_21_30/README.md)   | [✓](Question_21_30/answers/answer_4.py)  | | [✓](Question_21_30/answers_cpp/answer_4.cpp)  |          |
+|  25  | [最邻近插值（Nearest-neighbor Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_5.py)  | | [✓](Question_21_30/answers_cpp/answer_5.cpp)  |          |
+|  26  | [双线性插值（Bilinear Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_6.py)  | | [✓](Question_21_30/answers_cpp/answer_6.cpp)  |          |
+|  27  | [双三次插值（Bicubic Interpolation）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_7.py)  | | [✓](Question_21_30/answers_cpp/answer_7.cpp)  |          |
+|  28  | [仿射变换（Afine Transformations）——平行移动](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_8.py)  |[✓] | [✓](Question_21_30/answers_cpp/answer_8.cpp)  |          |
+|  29  | [仿射变换（Afine Transformations）——放大缩小](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_9.py)  |[✓] | [✓](Question_21_30/answers_cpp/answer_9.cpp)  |          |
+|  30  | [仿射变换（ Afine Transformations ）——旋转](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_10.py) | [✓]| [✓](Question_21_30/answers_cpp/answer_10.cpp) |          |
 
 ### [问题31-40](Question_31_40/README.md)
-| 序号 |                             内容                             | Python                                   | C++                                           | 翻译一校 |
-| :--: | :----------------------------------------------------------: | ---------------------------------------- | --------------------------------------------- | :------: |
-|  31  | [仿射变换（Afine Transformations）——倾斜](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_1.py)  | [✓](Question_31-40/answers_cpp/answer_1.cpp)  |          |
-|  32  | [傅立叶变换（Fourier Transform）](Question_31_40/README.md)  | [✓](Question_31-40/answers/answer_2.py)  | [✓](Question_31-40/answers_cpp/answer_2.cpp)  |          |
-|  33  |       [傅立叶变换——低通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_3.py)  | [✓](Question_31-40/answers_cpp/answer_3.cpp)  |          |
-|  34  |       [傅立叶变换——高通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_4.py)  | [✓](Question_31-40/answers_cpp/answer_4.cpp)  |          |
-|  35  |       [傅立叶变换——带通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_5.py)  | [✓](Question_31-40/answers_cpp/answer_5.cpp)  |          |
-|  36  | [JPEG 压缩——第一步：离散余弦变换（Discrete Cosine Transformation）](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_6.py)  | [✓](Question_31-40/answers_cpp/answer_6.cpp)  |          |
-|  37  | [峰值信噪比（Peak Signal to Noise Ratio）](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_7.py)  | [✓](Question_31-40/answers_cpp/answer_7.cpp)  |          |
-|  38  | [JPEG 压缩——第二步：离散余弦变换+量化](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_8.py)  | [✓](Question_31-40/answers_cpp/answer_8.cpp)  |          |
-|  39  | [JPEG 压缩——第三步：YCbCr 色彩空间](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_9.py)  | [✓](Question_31-40/answers_cpp/answer_9.cpp)  |          |
-|  40  | [JPEG 压缩——第四步：YCbCr+DCT+量化](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_10.py) | [✓](Question_31-40/answers_cpp/answer_10.cpp) |          |
+| 序号 |                             内容                             | Python                                   |  Python API  |  C++                                           | 翻译一校 |
+| :--: | :----------------------------------------------------------: | ---------------------------------------- | :------: |:---------------------------------------------: | :------: |
+|  31  | [仿射变换（Afine Transformations）——倾斜](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_1.py)  |  [✓]| [✓](Question_31-40/answers_cpp/answer_1.cpp)  |          |
+|  32  | [傅立叶变换（Fourier Transform）](Question_31_40/README.md)  | [✓](Question_31-40/answers/answer_2.py)  |  | [✓](Question_31-40/answers_cpp/answer_2.cpp)  |          |
+|  33  |       [傅立叶变换——低通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_3.py)  || [✓](Question_31-40/answers_cpp/answer_3.cpp)  |          |
+|  34  |       [傅立叶变换——高通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_4.py)  || [✓](Question_31-40/answers_cpp/answer_4.cpp)  |          |
+|  35  |       [傅立叶变换——带通滤波](Question_31_40/README.md)       | [✓](Question_31-40/answers/answer_5.py)  || [✓](Question_31-40/answers_cpp/answer_5.cpp)  |          |
+|  36  | [JPEG 压缩——第一步：离散余弦变换（Discrete Cosine Transformation）](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_6.py)  || [✓](Question_31-40/answers_cpp/answer_6.cpp)  |          |
+|  37  | [峰值信噪比（Peak Signal to Noise Ratio）](Question_31_40/README.md) || [✓](Question_31-40/answers/answer_7.py)  || [✓](Question_31-40/answers_cpp/answer_7.cpp)  |          |
+|  38  | [JPEG 压缩——第二步：离散余弦变换+量化](Question_31_40/README.md) || [✓](Question_31-40/answers/answer_8.py)  || [✓](Question_31-40/answers_cpp/answer_8.cpp)  |          |
+|  39  | [JPEG 压缩——第三步：YCbCr 色彩空间](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_9.py)  || [✓](Question_31-40/answers_cpp/answer_9.cpp)  |          |
+|  40  | [JPEG 压缩——第四步：YCbCr+DCT+量化](Question_31_40/README.md) | [✓](Question_31-40/answers/answer_10.py) | |[✓](Question_31-40/answers_cpp/answer_10.cpp) |          |
 
 ### [问题41-50](Question_41_50/README.md)
 
