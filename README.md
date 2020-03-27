@@ -1,112 +1,27 @@
 # 图像处理 100 问！！
 
-> * 日本语本当苦手，==翻译出错还请在issue指正或直接发起 PR。代码算法方面的问题请往[原repo](https://github.com/yoyoyo-yo/Gasyori100knock)提。==现阶段我并没有做这些题目（捂脸），只是翻译而已，因此算法细节可能没有翻译到位。不太好翻译的地方我也会在一定程度上意译~~自行发挥~~，请各位谅解。后续在写代码的途中会对翻译有所更正。我会尽量附上英文术语，有翻译不清楚的地方还请参照原文、英语及代码。
->
-> * 关于$\LaTeX$公式渲染问题：
->   * 在线阅读建议安装[MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)插件获得~~其实不太~~良好的公式阅读体验；
->   * 离线阅读建议使用可以渲染$\LaTeX$公式的Markdown编辑器/阅读器，如[Typora](https://www.typora.io/)（我是用这个编写和转换PDF的）和[MWeb](https://zh.mweb.im/)。VSCode使用者建议安装[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)插件渲染$\LaTeX$公式；
->   * 各个README文件在完成基本校对之后会转为PDF文件。PDF文件阅读效果最佳。
->
-> * 有签名戳`——gzr`的引用部分和脚注都是译注。译注可能会打扰大家阅读，请各位谅解。
->
-> 感谢！
->
-> ——gzr
+初衷：整理在学习图像处理过程的有关思路和具体解决。
 
-***English is here*** (KuKuXia translates into English)
+任何一门语言的学习，代码编写和理论学习有同等重要的作用，然而在很多情况下却忽略了代码实现的重要性，使知识仅停留在公式推导这一层次。为了巩固理论学习，本仓库在原库的基础上就理论细节进行了补充，同时加入了直接调用函数来实现图像处理的函数范例。
 
-> https://github.com/KuKuXia/Image_Processing_100_Questions
+说明：本文行文安排和源码实现参考了下面这个repository：
 
 ***Chinese is here***  (gzr2017, my ex-colleague, translates into Chinese)
 
 > https://github.com/gzr2017/ImageProcessing100Wen
 
-## Description
 
-为图像处理初学者设计的100个问题完成了啊啊啊啊啊(´；ω；｀)
-
-和蝾螈一起学习基本的图像处理知识，理解图像处理算法吧！解答这里的提出的问题请不要调用`OpenCV`的`API`，**自己动手实践吧**！虽然包含有答案，但不到最后请不要参考。一边思考，一边完成这些问题吧！
-
-- **问题不是按照难易程度排序的。虽然我尽可能地提出现在流行的问题，但在想不出新问题的情况下也会提出一些没怎么听说过的问题（括弧笑）。**
-
-- **这里的内容参考了各式各样的文献，因此也许会有不对的地方，请注意！**如果发现了错误还请发起PR ，帮助我改正！！
-
-- 【注意】使用这个页面造成的任何事端，本人不负任何责任。请您自担风险。
-
-  > 俺也一样。使用这个页面造成的任何事端，本人不负任何责任。
-  >
-  > ——gzr
-
-喜欢Python和C++的人来试试吧♡（最近新加了JavaScript呢）
-
-2019.5.14. これ金にならんかなぁ…
-
-如果有什么意见或者成绩的话也请一并告诉我！
-
-如果这对大家有用的话，我们也将接受捐赠（括弧笑）
-
-## Related
-
-★追記 2019.11.7
-
-Study-AI株式会社様　http://kentei.ai/
-のAI実装検定のシラバスに使用していただくことになりました！(ディープラーニング無限ノックも）Study-AI株式会社様ではAIスキルを学ぶためのコンテンツを作成されており、AIを学ぶ上でとても参考になります！
-
-検定も実施されてるので、興味ある方はぜひ受けることをお勧めします！
-
-**深度学习无限问请点击**[这里](https://github.com/yoyoyo-yo/DeepLearningMugenKnock)。
-
-## Recent
-
-我也在[Twitter](https://twitter.com/curry_frog)上发布更新信息。
-
-- 2019.11.22 [C++] Q.49~50 モルフォロジー処理（オープンイング、クロージング）を追加
-- 2019.11.21 [C++] Q.48 モルフォロジー処理（収縮）を追加
-- 2019.11.20 [C++] Q.47 モルフォロジー処理（膨張）を追加
-- 2019.10.27 [C++] Q.44~46 Hough直線検出を追加、[Python]の解答を修正
-- 2019.10.22 [C++] Q.41~43 Cannyのエッジ検出を追加, [Python] の解答を修正
-- 2019.9.3 [Python] Q.81~100のAnswerコードをメソッド化
-- 2019.9.2 [Python] Q.61~80のAnswerコードをメソッド化
-- 2019.8.28 [Python] Q.51~60のAnswerコードをメソッド化
-- 2019.8.18 [Python] Q.50までのAnswerコードをメソッド化
-- 2019.8.12 [C++]Q.36-40の解答追加
-- 2019.7.32 [C++]Q.32-35の解答追加
-- 2019.7.23 [C++]Q.30-31の解答追加
-- 2019.7.22 [C++]Q.25-29の解答追加
-- 2019.6.30 Q.21-24のC++の解答追加
-- 2019.6.8 JavaScriptのチュートリアルを追加
-- 2019    Q.11-20 C++ を追加　Q.15 Sobelを修正
-- 2019.3.25 Q.31 フーリエ系 Q.36 DCT,  Q.47,48 トップハット変換系を修正
-- 2019.3.13 Q95-100 Neural Networkを修正
-- 2019.3.8 Questions_01_10 にC++の解答を追加！
-- 2019.3.7 TutorialにC++用を追加　そろそろC++用の答えもつくろっかなーと
-- 2019.3.5 各Questionの答えをanswersディレクトリに収納
-- 2019.3.3 Q.18-22. 一部修正
-- 2019.2.26 Q.10. メディアンフィルタの解答を一部修正
-- 2019.2.25 Q.9. ガウシアンフィルタの解答を一部修正
-- 2019.2.23 Q.6. 減色処理のREADMEを修正
-- 2019.1.29 HSVを修正
-
-## 首先
-
-打开终端，输入以下指令。使用这个命令，你可以将整个目录完整地克隆到你的计算机上。
-
-```bash
-$ git clone https://github.com/yoyoyo-yo/Gasyori100knock.git
-```
-
-然后，选择你喜欢的 Python 或者 C++，阅读下一部分——Tutorial！
 
 ## [Tutorial](Tutorial)
 
-|      |      内容      |         Python          |                   C++                   | JavaScript |
-| :--: | :------------: | :---------------------: | :-------------------------------------: | ---------- |
-|  1   |      安装      |      [✓](Tutorial)      | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  2   | 读取、显示图像 | [✓](Tutorial/README.md) | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  3   |    操作像素    | [✓](Tutorial/README.md) | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  4   |    拷贝图像    | [✓](Tutorial/README.md) | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  5   |    保存图像    | [✓](Tutorial/README.md) | [✓](Tutoria/README_opencv_c_install.md) |            |
-|  6   |    练习问题    | [✓](Tutorial/README.md) | [✓](Tutoria/README_opencv_c_install.md) |            |
+|      |      内容      |         Python          |  Python API  |    C++                   | JavaScript |
+| :--: | :------------: | :---------------------: | :---------: | :----------------------: | ---------- |
+|  1   |      安装      |      [✓](Tutorial)      |      [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
+|  2   | 读取、显示图像 | [✓](Tutorial/README.md) |       [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
+|  3   |    操作像素    | [✓](Tutorial/README.md) |       [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
+|  4   |    拷贝图像    | [✓](Tutorial/README.md) |      [✓]    |[✓](Tutoria/README_opencv_c_install.md) |            |
+|  5   |    保存图像    | [✓](Tutorial/README.md) |      [✓]    | [✓](Tutoria/README_opencv_c_install.md) |            |
+|  6   |    练习问题    | [✓](Tutorial/README.md) |      [✓]    | [✓](Tutoria/README_opencv_c_install.md) |            |
 
 [Matplotlib和OpenCV的Tips](Image_processing_tips.ipynb)
 
@@ -154,8 +69,8 @@ python answers/answer_@@.py
 
 ### [问题21-30](Question_21_30/README.md)
 
-| 序号 |                             内容                             | Python                                   | C++                                           | 翻译一校 |
-| :--: | :----------------------------------------------------------: | ---------------------------------------- | --------------------------------------------- | :------: |
+| 序号 |                             内容                             | Python                                   |  Python API  | C++                                           | 翻译一校 |
+| :--: | :----------------------------------------------------------: | ---------------------------------------- | :---------: | --------------------------------------------- | :------: |
 |  21  | [直方图归一化（Histogram Normalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_1.py)  | [✓](Question_21_30/answers_cpp/answer_1.cpp)  |          |
 |  22  |            [直方图操作](Question_21_30/README.md)            | [✓](Question_21_30/answers/answer_2.py)  | [✓](Question_21_30/answers_cpp/answer_2.cpp)  |          |
 |  23  | [直方图均衡化（Histogram Equalization）](Question_21_30/README.md) | [✓](Question_21_30/answers/answer_3.py)  | [✓](Question_21_30/answers_cpp/answer_3.cpp)  |          |
